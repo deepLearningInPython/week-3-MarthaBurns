@@ -16,7 +16,9 @@ import numpy as np
 # -----------------------------------------------
 
 def compute_output_size_1d(input_array, kernel_array):
-    pass
+  input_length = len(input_array)
+  kernel_length = len(kernel_array)
+  return (input_length - kernel_length + 1)
 
 
 # -----------------------------------------------
