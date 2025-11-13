@@ -78,7 +78,7 @@ def compute_output_size_2d(input_matrix, kernel_matrix):
 # -----------------------------------------------
 def convolute_2d(input_matrix, kernel_matrix):
   output_height, output_width = compute_output_size_2d(input_matrix, kernel_matrix)
-  output_matrix =  = np.zeros((output_width, output_height))
+  output_matrix = np.zeros((output_width, output_height))
   for i in range(output_width):
     for j in range(output_height):
       patch = input_matrix[i:i + kernel_matrix.shape[0], j:j + kernel_matrix.shape[1]]
